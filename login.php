@@ -10,7 +10,7 @@
     $exists= false;
   
     // $sql = "SELECt * FROM `user` WHERE username='$username' AND password='$password'";
-    $sql = "SELECt * FROM `user` WHERE username='$username'";
+    $sql = "SELECT * FROM `user` WHERE username='$username'";
     $result = mysqli_query($conn, $sql);
     $num = mysqli_num_rows($result);
      if($num == 1)
